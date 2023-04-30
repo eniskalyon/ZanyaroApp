@@ -1,0 +1,162 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.65;
+  color: #333;
+}
+
+h1,
+h4 {
+  margin-block: 0;
+}
+
+.answer-area {
+  white-space: pre-wrap;
+  margin-top: 10rem;
+  margin-bottom: 8rem;
+  font-size: 1.15rem;
+}
+
+.our-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.prompt-field {
+  flex: 1;
+  color: #333;
+  padding: 5rem;
+  overflow-x: scroll;
+  font-size: 1rem;
+  margin: 2rem;
+}
+
+.prompt-button {
+  padding: 10px;
+  font-size: 1rem;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  background-color: #217746a5;
+  cursor: pointer;
+  transition: 500ms;
+}
+
+.prompt-button:hover {
+  color: #217746a5;
+  background-color: #fff;
+}
+
+@-webkit-keyframes rotate-forever {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes rotate-forever {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-forever {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.loading-spinner {
+  -webkit-animation-duration: 0.75s;
+  -moz-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: rotate-forever;
+  -moz-animation-name: rotate-forever;
+  animation-name: rotate-forever;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  animation-timing-function: linear;
+  height: 30px;
+  width: 30px;
+  border: 8px solid #777;
+  border-right-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 5rem 5rem;
+}
+
+.container-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+@media (max-width: 650px) {
+  .container-cards {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+}
+
+.container-cards * {
+  color: #217746a5;
+  background-color: #fff;
+
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 500ms;
+}
+
+.card:hover {
+  color: #fff;
+  background-color: #217746a5;
+}
