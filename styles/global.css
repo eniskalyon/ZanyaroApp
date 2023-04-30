@@ -29,12 +29,16 @@ h4 {
 }
 
 .prompt-field {
-  flex: 1;
   color: #333;
-  padding: 5rem;
-  overflow-x: scroll;
+
   font-size: 1rem;
-  margin: 2rem;
+  margin: 1rem 8rem;
+  box-sizing: border-box;
+
+  min-width: 50vw;
+
+  height: 30vh;
+  max-width: 30vw;
 }
 
 .prompt-button {
@@ -126,19 +130,34 @@ h4 {
   max-width: 700px;
   margin: 0 auto;
   padding: 5rem 5rem;
-  display: flex;
-  flex-direction: column;
+  position: absolute;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 850px) {
+  .container {
+    padding: 5rem 1rem;
+    flex-direction: column;
+  }
 }
 
 .container-cards {
   display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 800px) {
+  .container {
+    display: flex;
+  }
+
   .container-cards {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: row;
     gap: 0.5rem;
   }
 }
@@ -153,9 +172,14 @@ h4 {
   padding: 10px;
   margin: 10px;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1rem;
   cursor: pointer;
   transition: 500ms;
+}
+
+.card {
+  width: 20vw;
+  height: auto;
 }
 
 .card:hover {
