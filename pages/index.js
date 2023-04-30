@@ -39,7 +39,10 @@ export default function MyPage() {
 
   return (
     <div className="container">
-      <h1>&lt;zanyaro/&gt;</h1>
+      
+
+<div className="container-inner-1">
+<h1>&lt;zanyaro/&gt;</h1>
       <h4>the omgniscient AI tutor of yours!</h4>
       <h5>(Beta)</h5>
 
@@ -50,6 +53,8 @@ export default function MyPage() {
         <input className="prompt-field" type="text" onChange={handleChange} />
         <button className="prompt-button">Go!</button>
       </form>
+</div>
+
 
       <div className="container-cards">
         <p className="card" onClick={handleCardClick}>How can I write a function in Python that takes two numbers as input and returns the sum of the numbers?</p>
